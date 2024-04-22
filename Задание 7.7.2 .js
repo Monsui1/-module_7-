@@ -9,8 +9,8 @@ function calculate(a, b, operator) {
         case '/':
             return a / b;
         default:
-            return 'Invalid operator';                
-    }
+            throw new Error("Unknown operator: " + operator);                 
+ }
 }
 
 let values = [2, 3, "+"];
